@@ -19,6 +19,8 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
                     {{Session::get('success')}}
                 </div>
                 @endif 
+
+                
                 <form method="post" action="{{url('save-gun')}}">
                     @csrf
                     <div class="md-3">
