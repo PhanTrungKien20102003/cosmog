@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ModelGunsController;
 use App\Http\Controllers\RarityController;
 use App\Http\Controllers\SkinSetsController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\GuestsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,3 +30,7 @@ Route::get('delete-Guns/{id}',[ModelGunsController::class,'deleteGuns']);
 Route::get('rarity-List',[RarityController::class,'RarityIndex']);
 
 Route::get('skin_sets-List',[SkinSetsController::class,'skin_setsIndex']);
+
+Route::get('admin-List',[AdminController::class,'AdminIndex']);
+
+Route::get('guests-List',[GuestsController::class,'GuestsIndex']);
