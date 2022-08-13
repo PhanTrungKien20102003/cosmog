@@ -12,22 +12,32 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
 <body>
     <div class="container" style="margin: top 20px;">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-10">
                 <h2>Rarity List</h2>
+                @if (Session::has('success'))
+                <div class="alert alert-success" role="alert">
+                    {{Session::get('success')}}
+                </div>
+                @endif 
+                <div style ="margin-right:10px; float: right;">
+                    <a href="{{url('add-Rarity')}}" class ="btn btn-primary"> Add </a>
+                </div>
                 <table class="table">
                     <thead>
                         <tr>
                             <th>ID</th>
                             <th>Name</th>
                             <th>Icon</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($data as $rarity)
+                        @foreach ($data as $rarities)
                         <tr>
-                            <td>{{$rarity->rarityID}}</td>
-                            <td>{{$rarity->rarityName}}</td>
-                            <td>{{$rarity->rarityIcon}}</td>
+                            <td>{{$rarities->rarityID}}</td>
+                            <td>{{$rarities->rarityName}}</td>
+                            <td>{{$rarities->rarityIcon}}</td>
+                            <td> <a href="{{url('edit-Rarity/'.$rarities->rarityID)}}" class ="btn btn-primary"> Edit </a> | <a href="{{url('delete-Rarity/'.$rarities->rarityID)}}" class ="btn btn-danger"> Delete </a></td>
                         </tr>
                         @endforeach
                     </tbody>

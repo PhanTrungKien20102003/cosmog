@@ -6,6 +6,7 @@ use App\Http\Controllers\RarityController;
 use App\Http\Controllers\SkinSetsController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\GuestsController;
+use App\Http\Controllers\SkinsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,6 +29,18 @@ Route::post('update-gun',[ModelGunsController::class,'updateGuns']);
 Route::get('delete-Guns/{id}',[ModelGunsController::class,'deleteGuns']);
 
 Route::get('rarity-List',[RarityController::class,'RarityIndex']);
+Route::get('add-Rarity',[RarityController::class,'addRarity']);
+Route::post('save-rarity',[RarityController::class,'saveRarity']);
+Route::get('edit-Rarity/{rarityid}',[RarityController::class,'editRarity']);
+Route::post('update-rarity',[RarityController::class,'updateRarity']);
+Route::get('delete-Rarity/{rarityid}',[RarityController::class,'deleteRarity']);
+
+Route::get('skins-List',[SkinsController::class,'SkinsIndex']);
+Route::get('add-Skins',[SkinsController::class,'addSkins']);
+Route::post('save-skins',[SkinsController::class,'saveSkins']);
+Route::get('edit-Skins/{skinid}',[SkinsController::class,'editSkins']);
+Route::post('update-skins',[SkinsController::class,'updateSkins']);
+Route::get('delete-Skins/{skinid}',[SkinsController::class,'deleteSkins']);
 
 Route::get('skin_sets-List',[SkinSetsController::class,'skin_setsIndex']);
 
