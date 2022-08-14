@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Valorant</title>
+    <title>Home</title>
     <link rel="icon" href="img/logowhite.png" />
     
     <!-- Google Fonts -->
@@ -37,11 +37,8 @@
                 <div class="col-md-8">
                     <div class="user-menu">
                         <ul>
-                            <li><a href="#"><i class="fa fa-user"></i> My Account</a></li>
-                            <li><a href="#"><i class="fa fa-heart"></i> Wishlist</a></li>
-                            <li><a href="cart.html"><i class="fa fa-user"></i> My Cart</a></li>
-                            <li><a href="checkout.html"><i class="fa fa-user"></i> Checkout</a></li>
-                            <li><a href="#"><i class="fa fa-user"></i> Login</a></li>
+                            <li><a href="#"><i class="fa fa-user"></i> Guest Login</a></li>
+                            <li><a href="#"><i class="fa fa-user"></i> Admin Login</a></li>
                         </ul>
                     </div>
                 </div>
@@ -104,14 +101,10 @@
                 </div> 
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="shop.html">Shop page</a></li>
-                        <li><a href="single-product.html">Single product</a></li>
-                        <li><a href="cart.html">Cart</a></li>
-                        <li><a href="checkout.html">Checkout</a></li>
-                        <li><a href="#">Category</a></li>
-                        <li><a href="#">Others</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li class="active"><a href="index.blade.php">Home</a></li>
+                        <li><a href="{{url('/shop')}}">Shop page</a></li>
+                        <li><a href="checkout.blade.php">Checkout</a></li>
+
                     </ul>
                 </div>  
             </div>

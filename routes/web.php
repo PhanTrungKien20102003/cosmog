@@ -12,6 +12,7 @@ use App\Http\Controllers\shopController;
 use App\Http\Controllers\single_productController;
 use App\Http\Controllers\checkoutController;
 use App\Http\Controllers\cartController;
+use App\Http\Controllers\loginController;
 
 use App\Http\Controllers\Admin_PageController;
 /*
@@ -35,6 +36,8 @@ Route::get('/shop',[shopController::class,'shop']);
 Route::get('/single_product',[single_productController::class,'single_product']);
 Route::get('/checkout',[checkoutController::class,'checkout']);
 Route::get('/cart',[cartController::class,'cart']);
+Route::get('/login',[loginController::class,'login']);
+
 
 Route::get('guns-List',[ModelGunsController::class,'index']);
 Route::get('add-Guns',[ModelGunsController::class,'addGuns']);
