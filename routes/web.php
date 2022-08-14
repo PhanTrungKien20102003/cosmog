@@ -12,6 +12,8 @@ use App\Http\Controllers\shopController;
 use App\Http\Controllers\single_productController;
 use App\Http\Controllers\checkoutController;
 use App\Http\Controllers\cartController;
+
+use App\Http\Controllers\Admin_PageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -59,4 +61,6 @@ Route::get('skin_sets-List',[SkinSetsController::class,'skin_setsIndex']);
 Route::get('admin-List',[AdminController::class,'AdminIndex']);
 
 Route::get('guests-List',[GuestsController::class,'GuestsIndex']);
+
+Route::get('admin_Page',[Admin_PageController::class,'AdminPageIndex']);
 
