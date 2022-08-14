@@ -62,7 +62,7 @@ body {
   left: 50%;
   width: 30px;
   height: 4px;
-  background: #4285F4;
+  background: #ff4654;
   transform: translate(-50%, -50%);
 }
 .form-toggle:before {
