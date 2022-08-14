@@ -7,6 +7,7 @@ use App\Http\Controllers\SkinSetsController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\GuestsController;
 use App\Http\Controllers\SkinsController;
+use App\Http\Controllers\Admin_PageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -47,3 +48,5 @@ Route::get('skin_sets-List',[SkinSetsController::class,'skin_setsIndex']);
 Route::get('admin-List',[AdminController::class,'AdminIndex']);
 
 Route::get('guests-List',[GuestsController::class,'GuestsIndex']);
+
+Route::get('admin_Page',[Admin_PageController::class,'AdminPageIndex']);
