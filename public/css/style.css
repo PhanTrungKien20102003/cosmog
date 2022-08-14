@@ -54,7 +54,7 @@ body {
 }
 .user-menu li a {
     display: block;
-    font-size: 17px;
+    font-size: 20px;
     margin-right: 5px;
     padding: 10px;
     text-align: center;
@@ -69,9 +69,11 @@ body {
 .header-right ul.list-inline li a {
     display: block;
     padding: 9px;
+    font-size: 20px;
 }
 .header-right ul.list-inline li ul a {
     padding: 5px 15px;
+    font-size: 18px;
 }
 .header-right ul.list-inline li ul {
     border: medium none;
@@ -551,8 +553,8 @@ height: auto;
 .newsletter-form {
     margin-top: 25px;
 }
-a {color: #1abc9c}
-a:hover, a:focus {color: #17a78b}
+a {color: #ff4654}
+a:hover, a:focus {color: #ff4654}
 .footer-bottom-area {
   background: none repeat scroll 0 0 #000;
   color: #fff;
@@ -607,13 +609,13 @@ width: 10px;
   }
   .product-big-title-area {background: url(img/crossword.png) repeat scroll 0 0 #ff4654}
   .product-bit-title h2 {
-    font-family: raleway;
+    font-family: "Tungsten Bold";
     font-size: 50px;
     font-weight: 200;
     margin: 0;
     padding: 50px 0;color: #fff;
   }
-  .single-product-area .zigzag-bottom {background-color: #333333}
+  .single-product-area .zigzag-bottom {background-color: #ff4654}
   .single-product-area {
     padding: 80px 0 130px;
   }
@@ -729,12 +731,12 @@ input[type="submit"]:hover, button[type=submit]:hover {background-color: #222}
     width: 50px;
 }
 .add_to_cart_button {
-    background: none repeat scroll 0 0 #1abc9c;
+    background: none repeat scroll 0 0 #f9f9f9;
     border: medium none;
-    color: #fff;
+    color: #ff4654;
     padding: 6px 25px;display: inline-block
 }
-.add_to_cart_button:hover {background-color: #222;color: #fff;text-decoration: none}
+.add_to_cart_button:hover {background-color: #ff4654;color: #fff;text-decoration: none}
 form.cart {
     margin-bottom: 25px;
 }
@@ -752,7 +754,7 @@ product-tab {
     display: inline-block;
 }
 .product-tab li.active {
-    background: none repeat scroll 0 0 #1abc9c;
+    background: none repeat scroll 0 0 #ff4654;
 }
 .product-tab li.active a {
     color: #fff;
@@ -1005,10 +1007,79 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
     font-size: 20px;
     margin: 10px 0;
 }
+.single-shop-product a {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.single-shop-product p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #f9f9f9;
+}
 .product-option-shop {
     margin-top: 15px;
 }
 .single-shop-product {margin-bottom: 50px}
 .pagination > li > a, .pagination > li > span {
-  color: #1abc9c;
+  color: #ff4654;
+  font-size: 18px;
 }
+main article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 1004px;
+    height: 115px;
+    margin-left: 300px;
+  }
+main article .filters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  main article .filters h2 {
+    font-family: "Tungsten Bold", sans-serif;
+    font-size: 48px;
+    color: #f9f9f9;
+  }
+  
+  main article .filters form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  main article .filters form select {
+    font-family: "Tungsten Bold", sans-serif;
+    font-size: 32px;
+    background-color: transparent;
+    border: none;
+    color: #f9f9f9;
+    outline: none;
+    margin-left: 5px;
+  }
+  
+  main article .filters form select option {
+    background-color: #101823;
+    font-size: 16px;
+  }

@@ -38,11 +38,8 @@
                 <div class="col-md-8">
                     <div class="user-menu">
                         <ul>
-                            <li><a href="#"><i class="fa fa-user"></i> My Account</a></li>
-                            <li><a href="#"><i class="fa fa-heart"></i> Wishlist</a></li>
-                            <li><a href="cart.html"><i class="fa fa-user"></i> My Cart</a></li>
-                            <li><a href="checkout.html"><i class="fa fa-user"></i> Checkout</a></li>
-                            <li><a href="#"><i class="fa fa-user"></i> Login</a></li>
+                        <li><a href="{{url('/login')}}"><i class="fa fa-user"></i>Login</a></li>
+                            <li><a href="#"><i class="fa fa-user"></i> Admin Login</a></li>
                         </ul>
                     </div>
                 </div>
@@ -79,7 +76,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="logo">
-                        <h1><a href="index.html">e<span>Electronics</span></a></h1>
+                    <h1><a href="index.html"><img src="img/logo.png"><span>  Valorant</span></a></img></h1>
                     </div>
                 </div>
                 
@@ -104,15 +101,10 @@
                     </button>
                 </div> 
                 <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="active"><a href="shop.html">Shop page</a></li>
-                        <li><a href="single-product.html">Single product</a></li>
-                        <li><a href="cart.html">Cart</a></li>
-                        <li><a href="checkout.html">Checkout</a></li>
-                        <li><a href="#">Category</a></li>
-                        <li><a href="#">Others</a></li>
-                        <li><a href="#">Contact</a></li>
+                <ul class="nav navbar-nav">
+                        <li><a href="index.blade.php">Home</a></li>
+                        <li class="active"><a href="{{url('/shop')}}">Shop page</a></li>
+                        <li><a href="{{url('/checkout')}}">Checkout</a></li>
                     </ul>
                 </div>  
             </div>
@@ -130,8 +122,42 @@
             </div>
         </div>
     </div>
-    
-    
+    <main>
+      <article> 
+    <section class="filters">
+          <h2>Filter Products</h2>
+
+          <form>
+            <select name="collection" id="">
+              <option value="">Collection</option>
+              <option value="Reaver">Reaver</option>
+              <option value="Ion">Ion</option>
+              <option value="Oni">Oni</option>
+              <option value="Prime">Prime</option>
+              <option value="Glitchpop">Glitchpop</option>
+            </select>
+
+            <select name="gun" id="">
+              <option value="">Weapon</option>
+              <option value="1">Melee</option>
+              <option value="2">Vandals</option>
+              <option value="3">Phantoms</option>
+              <option value="4">Spectres</option>
+              <option value="5">Operators</option>
+              <option value="6">Sheriffs</option>
+            </select>
+
+            <select name="edition" id="">
+              <option value="">Edition</option>
+              <option value="deluxe">Deluxe</option>
+              <option value="premium">Premium</option>
+              <option value="ultra">Ultra</option>
+              <option value="exclusive">Exclusive</option>
+            </select>
+          </form>
+        </section>
+        </article>
+    </main>
     <div class="single-product-area">
         <div class="zigzag-bottom"></div>
         <div class="container">
@@ -139,176 +165,11 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
                         <div class="product-upper">
-                            <img src="img/product-2.jpg" alt="">
-                        </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
-                        </div>  
-                        
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                        </div>                       
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product">
-                        <div class="product-upper">
                             <img src="img/product-1.jpg" alt="">
                         </div>
                         <h2><a href="">Apple new mac book 2015 March :P</a></h2>
                         <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
-                        </div>  
-                        
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                        </div>                       
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src="img/product-3.jpg" alt="">
-                        </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
-                        </div>  
-                        
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                        </div>                       
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src="img/product-4.jpg" alt="">
-                        </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
-                        </div>  
-                        
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                        </div>                       
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src="img/product-2.jpg" alt="">
-                        </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
-                        </div>  
-                        
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                        </div>                       
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src="img/product-1.jpg" alt="">
-                        </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
-                        </div>  
-                        
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                        </div>                       
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src="img/product-3.jpg" alt="">
-                        </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
-                        </div>  
-                        
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                        </div>                       
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src="img/product-4.jpg" alt="">
-                        </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
-                        </div>  
-                        
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                        </div>                       
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src="img/product-2.jpg" alt="">
-                        </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
-                        </div>  
-                        
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                        </div>                       
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src="img/product-1.jpg" alt="">
-                        </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
-                        </div>  
-                        
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                        </div>                       
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src="img/product-3.jpg" alt="">
-                        </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
-                        </div>  
-                        
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                        </div>                       
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src="img/product-4.jpg" alt="">
-                        </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
+                            <p>899$</p>
                         </div>  
                         
                         <div class="product-option-shop">
@@ -347,83 +208,56 @@
     </div>
 
 
-    <div class="footer-top-area">
-        <div class="zigzag-bottom"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="footer-about-us">
-                        <h2>e<span>Electronics</span></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sunt id doloribus vero quam laborum quas alias dolores blanditiis iusto consequatur, modi aliquid eveniet eligendi iure eaque ipsam iste, pariatur omnis sint! Suscipit, debitis, quisquam. Laborum commodi veritatis magni at?</p>
-                        <div class="footer-social">
-                            <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                            <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                            <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
-                            <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                            <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-3 col-sm-6">
-                    <div class="footer-menu">
-                        <h2 class="footer-wid-title">User Navigation </h2>
-                        <ul>
-                            <li><a href="">My account</a></li>
-                            <li><a href="">Order history</a></li>
-                            <li><a href="">Wishlist</a></li>
-                            <li><a href="">Vendor contact</a></li>
-                            <li><a href="">Front page</a></li>
-                        </ul>                        
-                    </div>
-                </div>
-                
-                <div class="col-md-3 col-sm-6">
-                    <div class="footer-menu">
-                        <h2 class="footer-wid-title">Categories</h2>
-                        <ul>
-                            <li><a href="">Mobile Phone</a></li>
-                            <li><a href="">Home accesseries</a></li>
-                            <li><a href="">LED TV</a></li>
-                            <li><a href="">Computer</a></li>
-                            <li><a href="">Gadets</a></li>
-                        </ul>                        
-                    </div>
-                </div>
-                
-                <div class="col-md-3 col-sm-6">
-                    <div class="footer-newsletter">
-                        <h2 class="footer-wid-title">Newsletter</h2>
-                        <p>Sign up to our newsletter and get exclusive deals you wont find anywhere else straight to your inbox!</p>
-                        <div class="newsletter-form">
-                            <input type="email" placeholder="Type your email">
-                            <input type="submit" value="Subscribe">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer-bottom-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="copyright">
-                        <p>&copy; 2015 eElectronics. All Rights Reserved. Coded with <i class="fa fa-heart"></i> by <a href="http://wpexpand.com" target="_blank">WP Expand</a></p>
-                    </div>
-                </div>
-                
-                <div class="col-md-4">
-                    <div class="footer-card-icon">
-                        <i class="fa fa-cc-discover"></i>
-                        <i class="fa fa-cc-mastercard"></i>
-                        <i class="fa fa-cc-paypal"></i>
-                        <i class="fa fa-cc-visa"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <footer class="footer">
+      <section class="footer__logo">
+        <img src="img/VALORANT_Logo.png" alt="VALORANT_Logo.png" width=50% height=auto>
+        <p>© 2020 Riot Games, Inc. Riot Games, 
+            VALORANT and any associated logos are trademarks, service marks, or registered trademarks of Riot Games, Inc.</p>
+      </section>
+      <section>
+          <div>
+              <h1>FOLLOW US</h1>
+              <div class="footer__socialMedia">
+                  <div>
+                      <img src="img/Footer/Instagram_Logo.png" alt="Instagram_Logo.png" width=7% height=auto>
+                      <p>/VALORANT</p>
+
+                      <img src="img/Footer/YouTube_Logo.png" alt="YouTube_Logo.png" width=7% height=auto>
+                      <p>/PlayValorant</p>
+
+                  </div>
+                  <div>
+                      <img src="img/Footer/Twitter_Logo.png" alt="Twitter_Logo.png" width=7% height=auto>
+                      <p>/PlayVALORANT</p>
+
+                      <img src="img/Footer/Facebook_Logo.png" alt="Facebook_Logo.png" width=7% height=auto>
+                      <p>/PlayVALORANT</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="footer__about">
+              <h1>ABOUT US</h1>
+              <div>
+                  <p>Privacy Policy</p>
+                  <p>Terms of Service</p>
+              </div>
+          </div>
+          
+      </section>
+
+      <section class="footer__classification">
+          <h1>CLASSIFICATION</h1>
+          <div>
+              <img class="classification" src="img/Footer/Classification_Teen.png" alt="Classification_Teen.png">
+              <p>Blood <br>
+                Language <br>
+                Violence <br>
+                User interaction<br>
+                In-game purchases
+              </p>
+          </div>
+      </section>
    
     <!-- Latest jQuery form server -->
     <script src="https://code.jquery.com/jquery.min.js"></script>
