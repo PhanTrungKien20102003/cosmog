@@ -7,6 +7,11 @@ use App\Http\Controllers\SkinSetsController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\GuestsController;
 use App\Http\Controllers\SkinsController;
+use App\Http\Controllers\indexController;
+use App\Http\Controllers\shopController;
+use App\Http\Controllers\single_productController;
+use App\Http\Controllers\checkoutController;
+use App\Http\Controllers\cartController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,9 +23,16 @@ use App\Http\Controllers\SkinsController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+/*Route::get('/', function () {
+    return view('index');
 });
+*/
+Route::get('/',[indexController::class,'index']);
+Route::get('/shop',[shopController::class,'shop']);
+Route::get('/single_product',[single_productController::class,'single_product']);
+Route::get('/checkout',[checkoutController::class,'checkout']);
+Route::get('/cart',[cartController::class,'cart']);
+
 Route::get('guns-List',[ModelGunsController::class,'index']);
 Route::get('add-Guns',[ModelGunsController::class,'addGuns']);
 Route::post('save-gun',[ModelGunsController::class,'saveGun']);
@@ -47,3 +59,4 @@ Route::get('skin_sets-List',[SkinSetsController::class,'skin_setsIndex']);
 Route::get('admin-List',[AdminController::class,'AdminIndex']);
 
 Route::get('guests-List',[GuestsController::class,'GuestsIndex']);
+
