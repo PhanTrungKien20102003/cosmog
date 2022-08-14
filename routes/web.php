@@ -30,6 +30,7 @@ use App\Http\Controllers\Admin_PageController;
 });
 */
 Route::get('/',[indexController::class,'index']);
+Route::get('/index',[indexController::class,'index']);
 Route::get('/shop',[shopController::class,'shop']);
 Route::get('/single_product',[single_productController::class,'single_product']);
 Route::get('/checkout',[checkoutController::class,'checkout']);

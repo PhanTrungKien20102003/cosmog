@@ -1,0 +1,16 @@
+
+.footer__classification div {
+  width: 140px;
+}
+.footer__classification div p {
+  width: 76px;
+}
+
+.newsletter-form input[type="email"] {
+background: none repeat scroll 0 0 #fff;
+margin: 10px 0 0;
+}
+.product-big-title-area {background: url(img/crossword.png) repeat scroll 0 0 #ff4654}
+.product-bit-title h2 {
+font-family: raleway;
+}
