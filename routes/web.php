@@ -7,10 +7,10 @@ use App\Http\Controllers\SkinSetsController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\GuestsController;
 use App\Http\Controllers\SkinsController;
-<<<<<<< Updated upstream
-=======
+
+
 use App\Http\Controllers\Admin_Page_Controller;
->>>>>>> Stashed changes
+
 use App\Http\Controllers\indexController;
 use App\Http\Controllers\shopController;
 use App\Http\Controllers\single_productController;
@@ -18,11 +18,6 @@ use App\Http\Controllers\checkoutController;
 use App\Http\Controllers\cartController;
 use App\Http\Controllers\loginController;
 
-<<<<<<< Updated upstream
-use App\Http\Controllers\Admin_PageController;
-=======
-
->>>>>>> Stashed changes
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -34,17 +29,15 @@ use App\Http\Controllers\Admin_PageController;
 |
 */
 
-<<<<<<< Updated upstream
 /*Route::get('/', function () {
     return view('index');
 });
 */
-=======
+
 Route::get('/', function () {
     return view('index');
 });
 
->>>>>>> Stashed changes
 Route::get('/',[indexController::class,'index']);
 Route::get('/index',[indexController::class,'index']);
 Route::get('/shop',[shopController::class,'shop']);
@@ -81,9 +74,4 @@ Route::get('admin-List',[AdminController::class,'AdminIndex']);
 
 Route::get('guests-List',[GuestsController::class,'GuestsIndex']);
 
-<<<<<<< Updated upstream
-Route::get('admin_Page',[Admin_PageController::class,'AdminPageIndex']);
-
-=======
 Route::get('admin-Page',[Admin_Page_Controller::class,'adminIndex']);
->>>>>>> Stashed changes
