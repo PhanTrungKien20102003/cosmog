@@ -157,6 +157,7 @@
           </form>
         </section>
         </article>
+        
     </main>
     <div class="single-product-area">
         <div class="zigzag-bottom"></div>
