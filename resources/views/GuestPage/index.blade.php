@@ -196,61 +196,6 @@
               </p>
           </div>
       </section>
-
-      <div class="modal micromodal-slide" id="modal-add" aria-hidden="true">
-        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-          <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-add-title">
-            <header class="modal__header">
-              <h2 class="modal__title" id="modal-add-title">
-                You added a product to your cart.
-              </h2>
-              <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
-            </header>
-            <main class="modal__content" id="modal-add-content">
-              <p>
-                You added x Product to your cart.              
-              </p>
-            </main>
-          </div>
-        </div>
-      </div>
-
-      
-      <div class="modal micromodal-slide" id="modal-login" aria-hidden="true">
-        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-          <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-login-title">
-            <header class="modal__header">
-              <h2 class="modal__title" id="modal-login-title">
-                ¡No te reconocemos!
-              </h2>
-              <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
-            </header>
-            <main class="modal__content" id="modal-login-content">
-              <p>
-                Por favor inicia sesión o regístrate.
-              </p>
-            </main>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal micromodal-slide" id="modal-repeat" aria-hidden="true">
-        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-          <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-repeat-title">
-            <header class="modal__header">
-              <h2 class="modal__title" id="modal-repeat-title">
-                ¡Ya has agregado este producto!
-              </h2>
-              <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
-            </header>
-            <main class="modal__content" id="modal-repeat-content">
-              <p>
-                El producto x ya se encuentra en tu carrito.
-              </p>
-            </main>
-          </div>
-        </div>
-      </div>
       
   </footer> <!-- End footer bottom area -->
    
