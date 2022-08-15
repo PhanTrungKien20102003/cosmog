@@ -183,24 +183,24 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="chart.html">
+                            <a href="{{url('adminPie-Page')}}">
                                 <i class="fas fa-chart-bar"></i>Charts</a>
                         </li>
                         <li>
-                            <a href="table.html">
-                                <i class="fas fa-table"></i>Tables</a>
+                            <a href="{{url('skins-List')}}">
+                                <i class="fas fa-table"></i>Skins List</a>
                         </li>
                         <li>
-                            <a href="form.html">
-                                <i class="far fa-check-square"></i>Forms</a>
+                            <a href="{{url('guns-List')}}">
+                                <i class="fas fa-table"></i>Guns List</a>
                         </li>
                         <li>
-                            <a href="calendar.html">
-                                <i class="fas fa-calendar-alt"></i>Calendar</a>
+                            <a href="{{url('rarity-List')}}">
+                                <i class="fas fa-table"></i>Rarity List</a>
                         </li>
                         <li>
-                            <a href="map.html">
-                                <i class="fas fa-map-marker-alt"></i>Maps</a>
+                            <a href="{{url('skin_sets-List')}}">
+                                <i class="fas fa-table"></i>Skin Sets List</a>
                         </li>
                         <li class="has-sub">
                             <a class="js-arrow" href="#">
