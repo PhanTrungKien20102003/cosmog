@@ -157,6 +157,20 @@
           </form>
         </section>
         </article>
+        <article class = "container">
+            <section class = "card" style = "height: 402px;">
+                <h2> 
+                    <a href="">Vandal Prime</a>
+                </h2>
+                <img src="img/Skins/vaImage.jpg"/>
+                <section class = "card__cont">
+                    <div>
+                        <img src="img/Rarity/PE.jpg"/>
+                        <p>Premium</p>
+                    </div>
+                </section>
+            </section>
+        </article>
     </main>
     <div class="single-product-area">
         <div class="zigzag-bottom"></div>

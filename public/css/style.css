@@ -198,7 +198,100 @@ flex-direction: column;
     display: none;
   }
 
-
+  main .container {
+    width: 1200px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 53px;
+  }
+  
+  main .card {
+    height: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 320px;
+    background-color: #f9f9f9;
+    border-radius: 2px;
+    margin-bottom: 23px;
+    overflow: hidden;
+  }
+  
+  main .card section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  main .card a {
+    text-decoration: none;
+    color: #101823;
+  }
+  
+  main .card h2 {
+    font-family: "Tungsten Bold";
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    color: #101823;
+  }
+  
+  main .card p {
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    color: #101823;
+  }
+  
+  main .card div {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  main .card div p {
+    font-weight: bold;
+    margin-left: 8px;
+  }
+  
+  main .card div strong {
+    font-size: 20px;
+  }
+  
+  main .card__button {
+    cursor: pointer;
+  }
   .zigzag-bottom {
     background: none repeat scroll 0 0 #ff4654;
     bottom: -80px;
