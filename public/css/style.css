@@ -256,11 +256,12 @@ flex-direction: column;
     font-size: 36px;
     line-height: 43px;
     color: #101823;
+    margin-top: 30px;
   }
   
   main .card p {
     font-family: Poppins, sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     color: #101823;
   }
   
@@ -287,10 +288,13 @@ flex-direction: column;
   
   main .card div strong {
     font-size: 20px;
+    margin-left: 10px;
+    font-family: Poppins;
   }
   
   main .card__button {
     cursor: pointer;
+    margin-top: 10px;
   }
   .zigzag-bottom {
     background: none repeat scroll 0 0 #ff4654;

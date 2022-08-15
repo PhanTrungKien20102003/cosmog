@@ -158,41 +158,28 @@
         </section>
         </article>
         <article class = "container">
-            <section class = "card" style = "height: 402px;">
+            <section class = "card" style = "height: 360px;">
                 <h2> 
                     <a href="">Vandal Prime</a>
                 </h2>
-                <img src="img/Skins/vaImage.jpg"/>
+                <img src="img/Skins/primeVaImage.png"/>
                 <section class = "card__cont">
                     <div>
-                        <img src="img/Rarity/PE.jpg"/>
+                        <img src="img/Rarity/PE.png" width=25% height=auto/>
                         <p>Premium</p>
                     </div>
+                    <div>
+                        <img src="img/Icons/vp.png" class="vp" width=10% height=auto/ style="margin-left: 80px">
+                        <p>
+                            <strong>1775</strong>
+                        </p>
+                    </div>
+                    <p class="card__button">Add To Cart</p>
                 </section>
             </section>
         </article>
     </main>
-    <div class="single-product-area">
-        <div class="zigzag-bottom"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src="img/product-1.jpg" alt="">
-                        </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price">
-                            <p>899$</p>
-                        </div>  
-                        
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                        </div>                       
-                    </div>
-                </div>
-            </div>
-            
+   
             <div class="row">
                 <div class="col-md-12">
                     <div class="product-pagination text-center">
