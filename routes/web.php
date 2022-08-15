@@ -18,6 +18,8 @@ use App\Http\Controllers\checkoutController;
 use App\Http\Controllers\cartController;
 use App\Http\Controllers\loginController;
 
+use App\Http\Controllers\AdminLoginPageController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -75,3 +77,5 @@ Route::get('admin-List',[AdminController::class,'AdminIndex']);
 Route::get('guests-List',[GuestsController::class,'GuestsIndex']);
 
 Route::get('admin-Page',[Admin_Page_Controller::class,'adminIndex']);
+
+Route::get('adminLogin-Page',[AdminLoginPageController::class,'adminLoginPageIndex']);

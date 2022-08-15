@@ -20,6 +20,9 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
                 </div>
                 @endif 
                 <div style ="margin-right:10px; float: right;">
+                    <a href="{{url('admin-Page')}}" class ="btn btn-danger"> Back </a>
+                </div>
+                <div style ="margin-right:10px; float: right;">
                     <a href="{{url('add-Skins')}}" class ="btn btn-primary"> Add </a>
                 </div>
                 
