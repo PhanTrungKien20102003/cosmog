@@ -19,6 +19,8 @@ use App\Http\Controllers\loginController;
 
 use App\Http\Controllers\AdminLoginPageController;
 
+use App\Http\Controllers\ChartController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -77,3 +79,5 @@ Route::get('guests-List',[GuestsController::class,'GuestsIndex']);
 Route::get('admin-Page',[Admin_Page_Controller::class,'adminIndex']);
 
 Route::get('adminLogin-Page',[AdminLoginPageController::class,'adminLoginPageIndex']);
+
+Route::get('adminPie-Page',[ChartController::class,'pieChart']);
